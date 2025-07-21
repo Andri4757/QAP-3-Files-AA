@@ -1,0 +1,47 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+  font-family: Arial, sans-serif;
+}
+
+.mainbox {
+  width: 1000px;
+  background-color: white;
+  border: 3px solid gray;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.boldtext {
+  font-weight: bold;
+}
+
+.centertext {
+  text-align: center;
+}
+
+.form-section, .invoice-section {
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.right {
+  text-align: right;
+}

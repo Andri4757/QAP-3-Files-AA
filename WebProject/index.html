@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mo’s Lawncare Services</title>
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="index.js"></script>
+</head>
+<body>
+<div class="mainbox">
+    <main>
+        <h2 class="centertext">Mo’s Lawncare Services – Customer Invoice</h2>
+
+        <section class="form-section">
+            <label for="custName">Customer Name:</label><br />
+            <input type="text" id="custName" /><br />
+
+            <label for="custAddress">Street Address:</label><br />
+            <input type="text" id="custAddress" /><br />
+
+            <label for="custCity">City:</label><br />
+            <input type="text" id="custCity" /><br />
+
+            <label for="custPhone">Phone Number (999-999-9999):</label><br />
+            <input type="text" id="custPhone" /><br />
+
+            <label for="sqft">Property Size (in sq ft):</label><br />
+            <input type="number" id="sqft" /><br /><br />
+
+            <button onclick="calculateInvoice()">Generate Invoice</button>
+        </section>
+
+        <section class="invoice-section">
+            <table>
+                <tr><th colspan="2" class="boldtext">Customer details:</th></tr>
+                <tr><td colspan="2" id="custOutput"></td></tr>
+                <tr><td>Property size (in sq ft):</td><td id="sqftOutput" class="right"></td></tr>
+                <tr><td>Border cost:</td><td id="borderCost" class="right"></td></tr>
+                <tr><td>Moving cost:</td><td id="movingCost" class="right"></td></tr>
+                <tr><td>Fertilizer cost:</td><td id="fertCost" class="right"></td></tr>
+                <tr><td>Total charges:</td><td id="totalCharges" class="right"></td></tr>
+                <tr><td>Sales tax (HST):</td><td id="hst" class="right"></td></tr>
+                <tr><td>Environmental tax:</td><td id="envTax" class="right"></td></tr>
+                <tr><th>Invoice total:</th><th id="invoiceTotal" class="right"></th></tr>
+            </table>
+            <p class="centertext boldtext" style="background-color: orange;">Turning Lawns into Landscapes</p>
+        </section>
+    </main>
+</div>
+</body>
+</html>
